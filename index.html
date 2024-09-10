@@ -17,15 +17,58 @@
     <script src="./script.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">QuizApp</span>
+            <span class="navbar-brand mb-0 h1">QuizApp</span>
         </div>
-      </nav>
+    </nav>
+
+    <section class="card_section">
+        <div class="card quiz_card">
+            <img src="./img/card_img.jpg" class="card-img-top">
+            <div class="card-body">
+
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 16.67%">16,67%</div>
+                </div>
+
+                <h5 class="card-title" id="question_text">Frage</h5>
+
+                <div class="card quiz_answer_card mb-2" onclick="answer('answer_1')">
+                    <div class="card-body" id="answer_1">
+                        Antwort
+                    </div>
+                </div>
+                <div class="card quiz_answer_card mb-2" onclick="answer('answer_2')">
+                    <div class="card-body" id="answer_2">
+                        Antwort
+                    </div>
+                </div>
+                <div class="card quiz_answer_card mb-2" onclick="answer('answer_3')">
+                    <div class="card-body" id="answer_3">
+                        Antwort
+                    </div>
+                </div>
+                <div class="card quiz_answer_card mb-2" onclick="answer('answer_4')">
+                    <div class="card-body" id="answer_4">
+                        Antwort
+                    </div>
+                </div>
+
+                <div class="question_footer">
+                    <span>
+                        <b id="current_question"></b> von <b id="all_questions"></b> Fragen
+                    </span>
+                    <button class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-      
+
 
 
 </body>
