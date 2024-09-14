@@ -9,7 +9,7 @@ body {
 }
 
 .card_section {
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,4 +38,27 @@ background-color: rgba(0, 0, 0, 0.05);
     justify-content: space-between;
     align-items: center;
     padding-top: 8px;
+}
+
+.d-none {
+    display: none;
+}
+
+.end-text {
+    text-align: center !important;
+}
+
+.end-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-screen-btn {
+    display: block;
+    margin: 16px auto;
+}
+
+.end-screen-img {
+    object-fit: cover;
 }
